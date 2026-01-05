@@ -69,10 +69,11 @@ class Order {
     }
 
     static clone(order) {
-        return new Order(
-            order.status,
-            order.pay,
-            order.itemList
-        );
+        cloned = new Order();
+        cloned.status = order.status;
+        cloned.pay = other.pay;
+        cloned.itemList = other.itemList;
+
+        return cloned;
     }
 }
